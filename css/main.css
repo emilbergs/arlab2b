@@ -264,3 +264,19 @@ span.current {
   width: 28%;
   margin: 0 0 0 34%;
 }
+
+#data {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20% 20% 20% 20%;
+  width: 50%;
+  margin: 0 0 0 25%;
+}
+
+#data h2 {
+  font-weight: 900;
+}
+
+#data h4 {
+  font-style: italic;
+}
