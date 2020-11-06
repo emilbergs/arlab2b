@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1;
 }
 body {
     overflow: hidden;
@@ -21,4 +20,50 @@ section div {
     border: 1px solid;
     width: 40vw;
     height: 40vh;
+}
+section div img {
+    width: 20%;
+}
+section div input {
+    border-radius: 12px;
+    border: 2px lightgray solid;
+    height: 38px;
+    padding: 10px;
+}
+#næste {
+    background-color: white;
+    border: 2px lightgray solid;
+    border-radius: 12px;
+    padding: 1.5%;
+    width: 200px;
+    text-decoration: none;
+    color: #6A6747;
+}
+#næste:hover {
+    background-color: #6A6747;
+    border-radius: 12px;
+    padding: 1.5%;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    border: 2px #6A6747 solid;
+}
+
+#tilbage {
+    background-color: #6A6747;
+    border: 2px #6A6747 solid;
+    border-radius: 12px;
+    padding: 1.5%;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+}
+#tilbage:hover {
+    background-color: white;
+    border: 2px lightgray solid;
+    border-radius: 12px;
+    padding: 1.5%;
+    width: 200px;
+    text-decoration: none;
+    color: #6A6747;
 }
