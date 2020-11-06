@@ -174,3 +174,70 @@ display: flex;
 justify-content: center;
 }
 
+
+/* Progress bar */
+.progressContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 50%;
+  top: 10vh;
+  left: 25%;
+}
+.progress-bar {
+  width: 100%;
+}
+ul {
+  /* remove default ul styling */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  /* Every span needs a border so things align */
+  border: 3px solid #fff;
+  background-color: #fff;
+  color: #fff;
+}
+li:after {
+  background-color: #fff;
+  content: '';
+  height: 3px;
+  flex-grow: 1;
+}
+li:last-child {
+  /*  This prevents the last li from adding space to the right of the span  */
+  width: auto;
+}
+li:last-child:after {
+  display: none;
+}
+li.completed:after {
+  background-color: #000;
+}
+span.completed {
+  border-color: #000;
+  background-color: #000;
+}
+span.current {
+  border-color: #000;
+  background-color: #000;
+  color: #000;
+}
+.current img {
+  width: 90%;
+}
+
