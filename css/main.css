@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1;
+}
+body {
+    overflow: hidden;
+}
+
+section {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url(/img/arla-cows1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -200px;
+    text-align: center;
+    padding: 30vh 30vw 30vh 30vw;
+}
+section div {
+    border: 1px solid;
+    width: 40vw;
+    height: 40vh;
+}
