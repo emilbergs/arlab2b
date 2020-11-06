@@ -1,7 +1,87 @@
+@font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Light.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Regular.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: Arla InterFace;
+    src: url(../fonts/ArlaInterFace-Bold.woff2) format("woff2"),
+      url(../fonts/ArlaInterFace-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: ARLA STRONG;
+    src: url(../fonts/ARLASTRONG-Regular.woff2) format("woff2"),
+      url(../fonts/ARLASTRONG-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  @font-face {
+    font-family: ARLA STRONG Mono;
+    src: url(../fonts/ARLASTRONG-Mono.woff2) format("woff2"),
+      url(../fonts/ARLASTRONG-Mono.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+  }
+  
+  
+  /* Using the fonts */
+  html,
+  body {
+    font-family: 'Arla InterFace';
+    
+  }
+  
+  .light {
+    font-weight: 300;
+  }
+  
+  .regular {
+    font-weight: 400;
+  }
+  
+  .bold {
+    font-weight: 700;
+  }
+  
+  .arla-strong {
+    font-family: 'ARLA STRONG',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+  
+  .arla-strong-mono {
+    font-family: 'ARLA STRONG Mono',
+      Helvetica,
+      Arial,
+      sans-serif;
+  }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     overflow: hidden;
 }
@@ -16,7 +96,7 @@ section {
     text-align: center;
     padding: 30vh 30vw 30vh 30vw;
 }
-section div {
+section .divSections {
     border: 1px solid;
     width: 40vw;
     height: 40vh;
@@ -29,41 +109,68 @@ section div input {
     border: 2px lightgray solid;
     height: 38px;
     padding: 10px;
+    width: 13vw;
+    font-size: 1em;
 }
-#næste {
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px lightgray;
+    border:2px lightgray solid;
+}
+input[type="text"]:focus:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px lightgray;
+    border:2px lightgray solid;
+    border-radius:12px;
+}
+
+
+.næste {
+    display: block;
     background-color: white;
     border: 2px lightgray solid;
     border-radius: 12px;
     padding: 1.5%;
-    width: 200px;
+    width: 80px;
     text-decoration: none;
     color: #6A6747;
+    margin: 0 2%;
 }
-#næste:hover {
+.næste:hover {
     background-color: #6A6747;
     border-radius: 12px;
     padding: 1.5%;
-    width: 200px;
+    width: 80px;
     color: white;
     text-decoration: none;
     border: 2px #6A6747 solid;
 }
 
-#tilbage {
+.tilbage {
+    display: block;
     background-color: #6A6747;
     border: 2px #6A6747 solid;
     border-radius: 12px;
     padding: 1.5%;
-    width: 200px;
+    width: 80px;
     color: white;
     text-decoration: none;
+    margin: 0 2%;
 }
-#tilbage:hover {
+.tilbage:hover {
     background-color: white;
     border: 2px lightgray solid;
     border-radius: 12px;
     padding: 1.5%;
-    width: 200px;
+    width: 80px;
     text-decoration: none;
     color: #6A6747;
 }
+
+.buttons {
+padding: 2vh;
+display: flex;
+justify-content: center;
+}
+
