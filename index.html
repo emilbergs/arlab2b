@@ -32,13 +32,13 @@
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="fname" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Number of cows"><br><br>
+                <input type="text" id="" name="fname" placeholder="Kg milk pr year-cow"><br><br>
+                <input type="text" id="nrCows" name="lname" placeholder="Number of cows"><br><br>
                 <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
             </form>
             <div class="buttons">
             <a class="tilbage bold">Tilbage</a>
-            <a href="#side2" class="næste bold">Næste</a>
+            <a href="#side2" class="næste bold" onclick="createUser()">Næste</a>
         </div>
         </div>
     </section>
@@ -244,7 +244,7 @@
     </div>
   </section>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
     <script src="spa.js"></script>
     <script src="main.js"></script>
 </body>

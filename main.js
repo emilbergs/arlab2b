@@ -9,3 +9,22 @@ let firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  const db = firebase.firestore();
+  const year6Ref = db.collection("year6");
+
+ 
+
+
+function createUser() {
+  // references to the input fields
+  let nrCowsInput = document.querySelector("#nrCows");
+
+  console.log(nrCowsInput.value);
+  
+
+  let newUser = {
+      yearCows: nrCowsInput.value,
+  };
+  year6Ref.add(newUser);
+}
