@@ -97,7 +97,6 @@ section {
     padding: 30vh 30vw 30vh 30vw;
 }
 section .divSections {
-    border: 1px solid;
     width: 40vw;
     height: 40vh;
 }
@@ -158,6 +157,7 @@ input[type="text"]:focus:hover {
     text-decoration: none;
     margin: 0 2%;
 }
+/*
 .tilbage:hover {
     background-color: white;
     border: 2px lightgray solid;
@@ -167,7 +167,7 @@ input[type="text"]:focus:hover {
     text-decoration: none;
     color: #6A6747;
 }
-
+*/
 .buttons {
 padding: 2vh;
 display: flex;
@@ -226,18 +226,41 @@ li:last-child:after {
   display: none;
 }
 li.completed:after {
-  background-color: #000;
+  background-color:#232323;
 }
 span.completed {
-  border-color: #000;
-  background-color: #000;
+  border-color: #232323;
+  background-color:#232323;
 }
 span.current {
-  border-color: #000;
-  background-color: #000;
-  color: #000;
+  border-color: #232323;
+  background-color: #232323;
+  color: #232323;
 }
 .current img {
   width: 90%;
 }
 
+#svarReg {
+  background-color: white;
+  border-radius: 12px;
+  padding: 7.35% 0 7.35% 0;
+  width: 50%;
+  margin: 0 0 0 25%;
+}
+
+#svarReg h2 {
+  font-weight: 900;
+}
+
+#svarReg h4 {
+  font-style: italic;
+}
+
+#carbonResult {
+  background-color: white;
+  border-radius: 12px;
+  padding: 12.1% 2% 12.1% 2%;
+  width: 28%;
+  margin: 0 0 0 34%;
+}
