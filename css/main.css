@@ -281,6 +281,7 @@ span.current {
   border-radius: 12px;
   top: 5vh;
   left: 5vw;
+  padding: 5%;
 }
 
 #data h2 {
@@ -332,10 +333,19 @@ span.current {
 
 #regionerne {
   width: 25%;
+  border: 1px solid;
+  padding: 1%;
 }
 #filterData {
   width: 25%;
+  border: 1px solid;
+  padding: 1%;
 }
 label {
   width: 50%;
+}
+#graphs {
+  width: 50%;
+  border: 1px solid;
+  padding: 1%;
 }
