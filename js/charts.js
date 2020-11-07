@@ -7,7 +7,8 @@ let dataPrYear = [{
     dryMatter:8139.350,
     diesel: 8284.000,
     kWh: 41640.000,
-    selfFeed: 79.225
+    selfFeed: 79.225,
+    footprint: 504.462
   }, 
   {
     year: "2016",
@@ -16,7 +17,8 @@ let dataPrYear = [{
     dryMatter: 5568.238,
     diesel: 5880.060,
     kWh: 67654.000,
-    selfFeed: 84.154
+    selfFeed: 84.154,
+    footprint: 445.563
   }, 
   {
     year: "2017",
@@ -25,7 +27,8 @@ let dataPrYear = [{
     dryMatter: 6465.915,
     diesel: 11475.330,
     kWh: 48613.000,
-    selfFeed: 68.585
+    selfFeed: 68.585,
+    footprint: 464.516
   }, 
   {
     year: "2018",
@@ -34,7 +37,8 @@ let dataPrYear = [{
     dryMatter: 6083.323,
     diesel: 10353.000,
     kWh: 45564.000,
-    selfFeed: 64.909
+    selfFeed: 64.909,
+    footprint: 399.700
   }, 
   {
     year: "2019",
@@ -43,7 +47,8 @@ let dataPrYear = [{
     dryMatter: 5469.291,
     diesel: 9873.000,
     kWh: 44975.000,
-    selfFeed: 69.413
+    selfFeed: 69.413,
+    footprint: 370.858
   }
   ];
   // 2: prepare data for chart
@@ -58,6 +63,7 @@ let dataPrYear = [{
     let diesel = [];
     let kWh = [];
     let selfFeed = [];
+    let footprint = []
     // looping through the data array
     for (const object of data) {
       // adding the values to the different arrays
@@ -68,6 +74,7 @@ let dataPrYear = [{
       diesel.push(object.diesel);
       kWh.push(object.kWh);
       selfFeed.push(object.selfFeed);
+      footprint.push(object.footprint)
     }
     // returning the two arrays (months & sales) inside and object
     // we cannot return to values - that's why we have to do it inside an array
@@ -78,7 +85,8 @@ let dataPrYear = [{
       dryMatter,
       diesel,
       kWh,
-      selfFeed
+      selfFeed,
+      footprint
     };
   }
   
@@ -288,5 +296,37 @@ let dataPrYear = [{
 
       appendSelfFeedChart(dataPrYear);
   
+  // 3: create and append the chart
+  function appendFootprintChart(footPrintData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(footPrintData);
+    //open the developer console to inspect the result
+    console.log(data);
+    let chartContainer7 = document.getElementById('chartContainer7');
+    let chart = new Chart(chartContainer7, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.footprint, // refering to the data object, holding data from prepareData()
+          label: 'CO2 footprint pr year',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: 'rgb(255, 99, 132)'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'CO2 footprint pr year'
+        }
+      }
+  
+    });
+  }
 
+  appendFootprintChart(dataPrYear);
  
