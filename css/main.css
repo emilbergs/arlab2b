@@ -91,13 +91,18 @@ section {
     min-height: 100vh;
     background-image: url(/img/arla-cows1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position-y: -200px;
     text-align: center;
-    padding: 30vh 30vw 30vh 30vw;
+}
+section #home {
+  padding: 0;
 }
 section .divSections {
-    width: 40vw;
+  position: absolute;
+    top: 30vh;
+    left: 37.5vw;
+    width: 25vw;
     height: 40vh;
 }
 section div img {
@@ -108,8 +113,9 @@ section div input {
     border: 2px lightgray solid;
     height: 38px;
     padding: 10px;
-    width: 13vw;
+    width: 45%;
     font-size: 1em;
+    margin-top: 1.5vh;
 }
 
 input[type="text"]:focus {
@@ -265,12 +271,16 @@ span.current {
   margin: 0 0 0 34%;
 }
 
+
+/* Data section */
 #data {
+  position: absolute;
   background-color: white;
+  width: 90vw;
+  height: 90vh;
   border-radius: 12px;
-  padding: 20% 20% 20% 20%;
-  width: 50%;
-  margin: 0 0 0 25%;
+  top: 5vh;
+  left: 5vw;
 }
 
 #data h2 {
@@ -279,4 +289,30 @@ span.current {
 
 #data h4 {
   font-style: italic;
+}
+
+#sedata .divSections{
+  position: relative;
+  left: 0;
+  top: 0;
+  text-align: left;
+}
+
+#kvartal {
+  margin: 3.5%;
+}
+
+#filterForm input {
+  width: 15%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+#filterData {
+  width: 25%;
 }

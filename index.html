@@ -26,16 +26,13 @@
               <li>
                 <span>5</span>
               </li>
-              <li>
-                <span>6</span>
-              </li>
             </ul>
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="kgMilk" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="nrCows" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="diesel" name="lname" placeholder="Diesel litre"><br><br>
+                <input type="text" id="kgMilk" name="fname" placeholder="Kg milk pr year-cow">
+                <input type="text" id="nrCows" name="lname" placeholder="Number of cows">
+                <input type="text" id="diesel" name="lname" placeholder="Diesel litre">
             </form>
             <div class="buttons">
             <a class="tilbage bold">Tilbage</a>
@@ -61,16 +58,13 @@
               <li>
                 <span>5</span>
               </li>
-              <li>
-                <span>6</span>
-              </li>
             </ul>
           </div>
         <div class="divSections">
             <form>
-                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="electricity" name="lname" placeholder="Electricity kWh"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow">
+                <input type="text" name="lname" placeholder="Number of cows">
+                <input type="text" id="electricity" name="lname" placeholder="Electricity kWh">
         </form>
         <div class="buttons">
         <a href="#home" class="tilbage bold">Tilbage</a>
@@ -96,16 +90,13 @@
               <li>
                 <span>5</span>
               </li>
-              <li>
-                <span>6</span>
-              </li>
             </ul>
           </div>
         <div class="divSections">
             <form>
-                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="dryMatter" name="lname" placeholder="Kg dry matter pr year-cow"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow">
+                <input type="text" name="lname" placeholder="Number of cows">
+                <input type="text" id="dryMatter" name="lname" placeholder="Kg dry matter pr year-cow">
             </form>
             <div class="buttons">
             <a href="#side2" class="tilbage bold">Tilbage</a>
@@ -131,58 +122,21 @@
               <li>
                 <span>5</span>
               </li>
-              <li>
-                <span>6</span>
-              </li>
             </ul>
           </div>
         <div class="divSections">
             <form>
-                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="selfFeed" name="lname" placeholder="% of Self-sufficiency feed"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow">
+                <input type="text" name="lname" placeholder="Number of cows">
+                <input type="text" id="selfFeed" name="lname" placeholder="% of Self-sufficiency feed">
             </form>
             <div class="buttons">
             <a href="#side3" class="tilbage bold">Tilbage</a>
-            <a href="#side5" class="næste bold">Næste</a>
-        </div>
-        </div>
-    </section>
-    <section id="side5" class="page">
-        <div class="progressContainer">
-            <ul class="progress-bar">
-              <li class="completed">
-                <span class="completed">1</span>
-              </li>
-              <li class="completed">
-                <span class="completed">2</span>
-              </li>
-              <li class="completed">
-                <span class="completed">3</span>
-              </li>
-              <li class="completed">
-                <span class="completed">4</span>
-              </li>
-              <li>
-                <span class="current"><img src="/img/traktor.png" alt="traktor"></span>
-              </li>
-              <li>
-                <span>6</span>
-              </li>
-            </ul>
-          </div>
-        <div class="divSections">
-            <form>
-                <input type="text" id="fname" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
-            </form>
-            <div class="buttons">
-            <a href="#side4" class="tilbage bold">Tilbage</a>
             <a href="#indsend" class="næste bold">Næste</a>
         </div>
         </div>
     </section>
+    
     <section id="indsend" class="page">
         <div class="progressContainer">
             <ul class="progress-bar">
@@ -198,9 +152,6 @@
               <li class="completed">
                 <span class="completed">4</span>
               </li>
-              <li class="completed">
-                <span class="completed">5</span>
-              </li>
               <li class="current">
                 <span class="current"><img src="/img/traktor.png" alt="traktor"></span>
               </li>
@@ -211,7 +162,7 @@
               <h2>Your carbon footprint result.</h2>
             </div>
             <div class="buttons">
-            <a href="#side5" class="tilbage bold">Tilbage</a>
+            <a href="#side4" class="tilbage bold">Tilbage</a>
             <a href="#takdata" class="næste bold" onclick="createUser()">Indsend</a>
         </div>
         </div>
@@ -235,18 +186,120 @@
   <section id="sedata" class="page">
     <div class="divSections">
       <div id="data">
-        <div class="buttons">
-        <a href="#" class="næste bold">Data</a>
-        <a href="#" class="næste bold">Regioner</a>
+        <div id="kvartalData">
+          <form id="kvartalForm">
+            <select name="kvartal" id="kvartal">
+              <option value="2020">2020</option>
+              <option value="2020">2019</option>
+              <option value="2020">2018</option>
+              <option value="2020">2017</option>
+              <option value="2020">2016</option>
+              <option value="2020">2015</option>
+            </select>
+          </form>
         </div>
-        <h2>Se din data</h2>
-        
+        <div class="flex">
+          <div id="regionerne">
+            <div>
+              <h2>Regionerne</h2>
+              <form>
+                <select name="vælgRegion" id="vælgRegion">
+                  <option value="nordjylland">Nordjylland</option>
+                  <option value="midtjylland">Midtjylland</option>
+                  <option value="syddanmark">Syddanmark</option>
+                  <option value="sjælland">Sjælland</option>
+                  <option value="hovedstaden">Hovedstaden</option>
+                </select>
+                <div>
+                  <label for="nordjylland">Region Nordjylland</label>
+                  <select name="nordjylland" id="nordjylland">
+                    <option value="gård1">Gård 1</option>
+                    <option value="gård2">Gård 2</option>
+                    <option value="gård3">Gård 3</option>
+                    <option value="gård4">Gård 4</option>
+                    <option value="gård5">Gård 5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="midtjylland"></label>
+                  <select name="midtjylland" id="midtjylland">
+                    <option value="gård1">Gård 1</option>
+                    <option value="gård2">Gård 2</option>
+                    <option value="gård3">Gård 3</option>
+                    <option value="gård4">Gård 4</option>
+                    <option value="gård5">Gård 5</option>
+                  </select>
+                </div>
+                <label for="syddanmark"></label>
+                <select name="syddanmark" id="syddanmark">
+                  <option value="gård1">Gård 1</option>
+                  <option value="gård2">Gård 2</option>
+                  <option value="gård3">Gård 3</option>
+                  <option value="gård4">Gård 4</option>
+                  <option value="gård5">Gård 5</option>
+                </select>
+                <label for="sjælland"></label>
+                <select name="sjælland" id="sjælland">
+                  <option value="gård1">Gård 1</option>
+                  <option value="gård2">Gård 2</option>
+                  <option value="gård3">Gård 3</option>
+                  <option value="gård4">Gård 4</option>
+                  <option value="gård5">Gård 5</option>
+                </select>
+                <label for="hovedstaden"></label>
+                <select name="hovedstaden" id="hovedstaden">
+                  <option value="gård1">Gård 1</option>
+                  <option value="gård2">Gård 2</option>
+                  <option value="gård3">Gård 3</option>
+                  <option value="gård4">Gård 4</option>
+                  <option value="gård5">Gård 5</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div id="filterData">
+            <div>
+              <h2>Filtrer Data</h2>
+              <form id="filterForm">
+                <div class="flex">
+                  <label for="cowsBox">Antallet af køer</label>
+                  <input type="checkbox" id="cowsBox">
+                </div>
+                <div class="flex">
+                  <label for="milkBox">Kg mælk pr år pr ko</label>
+                  <input type="checkbox" id="milkBox">
+                </div>
+                <div class="flex">
+                  <label for="dieselBox">Diesel</label>
+                  <input type="checkbox" id="dieselBox"> 
+                </div>
+                <div class="flex">
+                 <label for="electricityBox">Electricity</label>
+                 <input type="checkbox" id="electricityBox">
+                </div>
+                <div class="flex">
+                  <label for="dryMatterBox">Tørstof</label>
+                 <input type="checkbox" id="dryMatterBox">
+               </div>
+                <div class="flex">
+                  <label for="selfFeedBox">Selvforsyning</label>
+                  <input type="checkbox" id="selfFeedBox">
+                </div>
+                <div class="flex">
+                  <label for="footprint">CO2 fodspor</label>
+                  <input type="checkbox" id="footprint">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script> 
-    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->	
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
     <script src="spa.js"></script>
     <script src="main.js"></script>
