@@ -8,6 +8,7 @@
 </head>
 <body onhashchange="pageChange()">
     <section id="home" class="page">
+      <div class="root"></div>
         <div class="progressContainer">
             <ul class="progress-bar">
               <li class="">
@@ -32,13 +33,13 @@
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="" name="fname" placeholder="Kg milk pr year-cow"><br><br>
+                <input type="text" id="kgMilk" name="fname" placeholder="Kg milk pr year-cow"><br><br>
                 <input type="text" id="nrCows" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
+                <input type="text" id="diesel" name="lname" placeholder="Diesel litre"><br><br>
             </form>
             <div class="buttons">
             <a class="tilbage bold">Tilbage</a>
-            <a href="#side2" class="næste bold" onclick="createUser()">Næste</a>
+            <a href="#side2" class="næste bold">Næste</a>
         </div>
         </div>
     </section>
@@ -67,9 +68,9 @@
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="fname" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
+                <input type="text" name="lname" placeholder="Number of cows"><br><br>
+                <input type="text" id="electricity" name="lname" placeholder="Electricity kWh"><br><br>
         </form>
         <div class="buttons">
         <a href="#home" class="tilbage bold">Tilbage</a>
@@ -102,9 +103,9 @@
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="fname" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
+                <input type="text" name="lname" placeholder="Number of cows"><br><br>
+                <input type="text" id="dryMatter" name="lname" placeholder="Kg dry matter pr year-cow"><br><br>
             </form>
             <div class="buttons">
             <a href="#side2" class="tilbage bold">Tilbage</a>
@@ -137,9 +138,9 @@
           </div>
         <div class="divSections">
             <form>
-                <input type="text" id="fname" name="fname" placeholder="Kg milk pr year-cow"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Number of cows"><br><br>
-                <input type="text" id="lname" name="lname" placeholder="Diesel litre"><br><br>
+                <input type="text" name="fname" placeholder="Kg milk pr year-cow"><br><br>
+                <input type="text" name="lname" placeholder="Number of cows"><br><br>
+                <input type="text" id="selfFeed" name="lname" placeholder="% of Self-sufficiency feed"><br><br>
             </form>
             <div class="buttons">
             <a href="#side3" class="tilbage bold">Tilbage</a>
@@ -211,7 +212,7 @@
             </div>
             <div class="buttons">
             <a href="#side5" class="tilbage bold">Tilbage</a>
-            <a href="#takdata" class="næste bold">Næste</a>
+            <a href="#takdata" class="næste bold" onclick="createUser()">Indsend</a>
         </div>
         </div>
     </section>
@@ -243,8 +244,10 @@
       </div>
     </div>
   </section>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-    <script defer src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script> 
+    <!-- TODO: Add SDKs for Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
     <script src="spa.js"></script>
     <script src="main.js"></script>
 </body>
