@@ -39,21 +39,21 @@ function createUser() {
 }
 
 function selectOnlyThisFilter(id){
-  var myCheckbox = document.getElementsByName("checkboxFilter");
-  Array.prototype.forEach.call(myCheckbox,function(el){
+  let checkboxFilter = document.getElementsByName("checkboxFilter");
+  Array.prototype.forEach.call(checkboxFilter,function(el){
   	el.checked = false;
   });
   id.checked = true;
 }
 function selectOnlyThisRegion(id){
-  var myCheckbox = document.getElementsByName("checkboxRegion");
-  Array.prototype.forEach.call(myCheckbox,function(el){
+  let checkboxRegion = document.getElementsByName("checkboxRegion");
+  Array.prototype.forEach.call(checkboxRegion,function(el){
   	el.checked = false;
   });
   id.checked = true;
 }
 
-let vælgRegion = document.querySelector("#vælgRegion").value
+
 let nordjylland = document.querySelector("#nordjylland")
 let midtjylland = document.querySelector("#midtjylland")
 let syddanmark = document.querySelector("#syddanmark")
@@ -63,36 +63,124 @@ let hovedstaden = document.querySelector("#hovedstaden")
 
 
 function skiftRegion() {
+  let vælgRegion = document.querySelector("#vælgRegion").value
   console.log(vælgRegion)
+  let template = '';
   if (vælgRegion === "nordjylland") {
-    nordjylland.style.display = "block"
-    midtjylland.style.display = "none"
-    syddanmark.style.display = "none"
-    sjælland.style.display = "none"
-    hovedstaden.style.display = "none"
+    template += /*html*/ `
+              <div class="flex">
+                  <label for="cowsBox">Nordjylland Gård 1</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 2</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 3</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 4</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 5</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+              </div>
+              `
   } else if (vælgRegion === "midtjylland") {
-    nordjylland.style.display = "none"
-    midtjylland.style.display = "block"
-    syddanmark.style.display = "none"
-    sjælland.style.display = "none"
-    hovedstaden.style.display = "none"
+    template += /*html*/ `
+              <div class="flex">
+                  <label for="cowsBox">Midtjylland Gård 1</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 2</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 3</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 4</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 5</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+              </div>
+              `
   } else if (vælgRegion === "syddanmark") {
-    nordjylland.style.display = "none"
-    midtjylland.style.display = "none"
-    syddanmark.style.display = "block"
-    sjælland.style.display = "none"
-    hovedstaden.style.display = "none"
+    template += /*html*/ `
+              <div class="flex">
+                  <label for="cowsBox">Syddanmark Gård 1</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 2</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 3</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 4</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 5</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+              </div>
+              `
   } else if (vælgRegion === "sjælland") {
-    nordjylland.style.display = "none"
-    midtjylland.style.display = "none"
-    syddanmark.style.display = "none"
-    sjælland.style.display = "block"
-    hovedstaden.style.display = "none"
+    template += /*html*/ `
+              <div class="flex">
+                  <label for="cowsBox">Sjælland Gård 1</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 2</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 3</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 4</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 5</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+              </div>
+              `
   } else if (vælgRegion === "hovedstaden") {
-    nordjylland.style.display = "none"
-    midtjylland.style.display = "none"
-    syddanmark.style.display = "none"
-    sjælland.style.display = "none"
-    hovedstaden.style.display = "block"
+    template += /*html*/ `
+              <div class="flex">
+                  <label for="cowsBox">Hovedstaden Gård 1</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 2</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 3</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 4</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                </div>
+                <div class="flex">
+                  <label for="cowsBox">Gård 5</label>
+                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+              </div>
+              `
   }
+  document.querySelector("#gårdIRegion").innerHTML = template
 }

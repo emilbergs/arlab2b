@@ -336,3 +336,6 @@ span.current {
 #filterData {
   width: 25%;
 }
+label {
+  width: 50%;
+}

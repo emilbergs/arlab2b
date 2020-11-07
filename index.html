@@ -203,104 +203,16 @@
             <div>
               <h2>Regionerne</h2>
               <form>
-                <select name="vælgRegion" id="vælgRegion" onchange="skiftRegion()">
+                <select name="vælgRegion" id="vælgRegion" onchange="skiftRegion(this.value)">
                   <option value="nordjylland">Nordjylland</option>
                   <option value="midtjylland">Midtjylland</option>
                   <option value="syddanmark">Syddanmark</option>
                   <option value="sjælland">Sjælland</option>
                   <option value="hovedstaden">Hovedstaden</option>
                 </select>
-              <div id="nordjylland">
+              <div id="gårdIRegion">
                 <div class="flex">
                   <label for="cowsBox">Nordjylland Gård 1</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-              </div>
-              <div id="midtjylland">
-                <div class="flex">
-                  <label for="cowsBox">Gård 1</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-              </div>
-              <div id="syddanmark">
-                <div class="flex">
-                  <label for="cowsBox">Gård 1</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-              </div>
-              <div id="sjælland">
-                <div class="flex">
-                  <label for="cowsBox">Gård 1</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
-                </div>
-              </div>
-              <div id="hovedstaden">
-                <div class="flex">
-                  <label for="cowsBox">Gård 1</label>
                   <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
                 <div class="flex">
@@ -357,6 +269,9 @@
                 </div>
               </form>
             </div>
+          </div>
+          <div id="graphs">
+
           </div>
         </div>
       </div>
