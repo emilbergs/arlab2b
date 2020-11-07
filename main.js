@@ -38,3 +38,61 @@ function createUser() {
   yearSix.add(newUser);
 }
 
+function selectOnlyThisFilter(id){
+  var myCheckbox = document.getElementsByName("checkboxFilter");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+  	el.checked = false;
+  });
+  id.checked = true;
+}
+function selectOnlyThisRegion(id){
+  var myCheckbox = document.getElementsByName("checkboxRegion");
+  Array.prototype.forEach.call(myCheckbox,function(el){
+  	el.checked = false;
+  });
+  id.checked = true;
+}
+
+let vælgRegion = document.querySelector("#vælgRegion").value
+let nordjylland = document.querySelector("#nordjylland")
+let midtjylland = document.querySelector("#midtjylland")
+let syddanmark = document.querySelector("#syddanmark")
+let sjælland = document.querySelector("#sjælland")
+let hovedstaden = document.querySelector("#hovedstaden")
+
+
+
+function skiftRegion() {
+  console.log(vælgRegion)
+  if (vælgRegion === "nordjylland") {
+    nordjylland.style.display = "block"
+    midtjylland.style.display = "none"
+    syddanmark.style.display = "none"
+    sjælland.style.display = "none"
+    hovedstaden.style.display = "none"
+  } else if (vælgRegion === "midtjylland") {
+    nordjylland.style.display = "none"
+    midtjylland.style.display = "block"
+    syddanmark.style.display = "none"
+    sjælland.style.display = "none"
+    hovedstaden.style.display = "none"
+  } else if (vælgRegion === "syddanmark") {
+    nordjylland.style.display = "none"
+    midtjylland.style.display = "none"
+    syddanmark.style.display = "block"
+    sjælland.style.display = "none"
+    hovedstaden.style.display = "none"
+  } else if (vælgRegion === "sjælland") {
+    nordjylland.style.display = "none"
+    midtjylland.style.display = "none"
+    syddanmark.style.display = "none"
+    sjælland.style.display = "block"
+    hovedstaden.style.display = "none"
+  } else if (vælgRegion === "hovedstaden") {
+    nordjylland.style.display = "none"
+    midtjylland.style.display = "none"
+    syddanmark.style.display = "none"
+    sjælland.style.display = "none"
+    hovedstaden.style.display = "block"
+  }
+}

@@ -316,3 +316,23 @@ span.current {
 #filterData {
   width: 25%;
 }
+
+#midtjylland {
+  display: none;
+}
+#syddanmark {
+  display: none;
+}
+#sjælland {
+  display: none;
+}
+#hovedstaden {
+  display: none;
+}
+
+#regionerne {
+  width: 25%;
+}
+#filterData {
+  width: 25%;
+}
