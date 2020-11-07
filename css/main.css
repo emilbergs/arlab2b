@@ -275,7 +275,7 @@ span.current {
 /* Data section */
 #data {
   position: absolute;
-  background-color: white;
+  background-color: #f0f0f0;
   width: 90vw;
   height: 90vh;
   border-radius: 12px;
@@ -314,9 +314,6 @@ span.current {
 .flex {
   display: flex;
 }
-#filterData {
-  width: 25%;
-}
 
 #midtjylland {
   display: none;
@@ -335,19 +332,29 @@ span.current {
   width: 25%;
   border: 1px solid;
   padding: 1%;
+  background-color: white;
+}
+#regionerne input {
+  width: 15%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 #filterData {
   width: 25%;
   border: 1px solid;
   padding: 1%;
+  background-color: white;
 }
 label {
-  width: 50%;
+  width: 80%;
 }
 #graphs {
   width: 50%;
   border: 1px solid;
   padding: 1%;
+  background-color: white;
 }
 #chartContainer1 {
   display: none;
@@ -355,3 +362,19 @@ label {
 #filterForm .flex {
   margin: 5% 0 5% 0;
 }
+#regionerne .flex {
+  margin: 5% 0 5% 0;
+}
+
+#vælgRegion {
+  margin: 5% 0 2.5% 0;;
+}
+
+#sedata h1{
+  font-size: 2.5em;
+  width: 5%;
+  position: absolute;
+  top: 7.5vh;
+  left: 45%;
+}
+
