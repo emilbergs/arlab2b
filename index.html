@@ -213,23 +213,23 @@
               <div id="gårdIRegion">
                 <div class="flex">
                   <label for="cowsBox">Nordjylland Gård 1</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
                 <div class="flex">
                   <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
                 <div class="flex">
                   <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
                 <div class="flex">
                   <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
                 <div class="flex">
                   <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
                 </div>
               </div>
               </form>
@@ -240,8 +240,8 @@
               <h2>Filtrer Data</h2>
               <form id="filterForm">
                 <div class="flex">
-                  <label for="cowsBox">Antallet af køer</label>
-                  <input type="checkbox" id="cowsBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)">
+                  <label for="cowBox">Antallet af køer</label>
+                  <input type="checkbox" id="cowBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)">
                 </div>
                 <div class="flex">
                   <label for="milkBox">Kg mælk pr år pr ko</label>
@@ -271,7 +271,14 @@
             </div>
           </div>
           <div id="graphs">
-            <canvas id="chartContainer"></canvas>
+            <canvas id="chartContainer1"></canvas>
+            <canvas id="chartContainer2"></canvas>
+            <canvas id="chartContainer3"></canvas>
+            <canvas id="chartContainer4"></canvas>
+            <canvas id="chartContainer5"></canvas>
+            <canvas id="chartContainer6"></canvas>
+            <canvas id="chartContainer7"></canvas>
+
           </div>
         </div>
       </div>
@@ -284,7 +291,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     <script src="js/spa.js"></script>
-    <script src="js/chart.js"></script>
+    <script src="js/dataFilter.js"></script>
+    <script src="js/charts.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
