@@ -268,7 +268,7 @@ span.current {
   border-radius: 12px;
   padding: 7.35% 0 7.35% 0;
   width: 50%;
-  margin: 0 0 0 25%;
+  margin: -14.2% 0 0 25%;
 }
 
 #svarReg h2 {
@@ -286,9 +286,13 @@ span.current {
 #carbonResult {
   background-color: white;
   border-radius: 12px;
-  padding: 17.8% 2% 17.8% 2%;
+  padding: 1.7% 2% 1.7% 2%;
   width: 45%;
   margin: 0 0 0 25%;
+}
+
+#carbonResult img {
+  width: 50%;
 }
 
 /* Data section */
