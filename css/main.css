@@ -403,7 +403,7 @@ label {
 .mdl-button--raised.mdl-button--colored:active,
 .mdl-button--raised.mdl-button--colored:hover {
   background: var(--green);
-  color: #fff;
+  color: black;
   border-radius: 0;
 }
 
