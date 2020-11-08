@@ -81,11 +81,11 @@
     margin: 0;
     padding: 0;
 }
-
+/*
 body {
     overflow: hidden;
 }
-
+*/
 section {
     min-width: 100vw;
     min-height: 100vh;
@@ -276,11 +276,16 @@ span.current {
 }
 
 /* Data section */
+
+#user2, #user3, #user4, #user5, #user6, #user7, #user8, #user9 {
+  display: none;
+}
+
 #data {
   position: absolute;
   background-color: #f0f0f0;
   width: 90vw;
-  height: 90vh;
+  height: 80vh;
   border-radius: 12px;
   top: 5vh;
   left: 5vw;
