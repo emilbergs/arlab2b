@@ -214,12 +214,12 @@ li span {
   width: 30px;
   border-radius: 50%;
   /* Every span needs a border so things align */
-  border: 3px solid #fff;
+  border: 3px solid #f0f0f0;
   background-color: #fff;
   color: #fff;
 }
 li:after {
-  background-color: #fff;
+  background-color: #f0f0f0;
   content: '';
   height: 3px;
   flex-grow: 1;
