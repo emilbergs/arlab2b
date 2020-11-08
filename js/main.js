@@ -13,7 +13,8 @@ firebase.initializeApp(firebaseConfig);
 
   const db = firebase.firestore();
   const yearOne = db.collection("yearOne")
-  const yearSix = db.collection("yearSix");
+  const yearSix = db.collection("yearTwo");
+  
 
 
 function createUser() {
@@ -36,8 +37,12 @@ function createUser() {
       dryMatter: dryMatterInput.value,
       selfFeed: selfFeedInput.value
   };
-  yearSix.doc("userID").set(newUser);
+    firebase.auth().onAuthStateChanged(function (user) {
+    console.log(user.uid);
+    yearSix.doc(user.uid).set(newUser);
+  });
 }
+
 
 
 let _datas = [];
@@ -70,6 +75,7 @@ let _firebaseUI;
 // ========== FIREBASE AUTH ========== //
 // Listen on authentication state change
 firebase.auth().onAuthStateChanged(function (user) {
+  console.log(user);
   if (user) { // if user exists and is authenticated
     userAuthenticated(user);
   } else { // if user is not logged in
@@ -77,7 +83,11 @@ firebase.auth().onAuthStateChanged(function (user) {
   }
 });
 
-
+function userAuthenticated(user) {
+  appendUserData(user);
+  hideTabbar(false);
+  showLoader(false);
+}
 
 function userNotAuthenticated() {
   showPage("home");
@@ -97,6 +107,7 @@ function userNotAuthenticated() {
   _firebaseUI.start('#firebaseui-auth-container', uiConfig);
   showLoader(false);
 }
+
 
 
 
