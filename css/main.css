@@ -50,6 +50,10 @@
     font-family: 'Arla InterFace';
     
   }
+  #logo {
+    margin-top: 20vh;
+    width: 10%;
+  }
   
   .light {
     font-weight: 300;
@@ -97,6 +101,18 @@ section {
 }
 section #home {
   padding: 0;
+}
+#home a{
+  position: absolute;
+  bottom: 2.5%;
+  right: 2.5%;
+  height: 12px;
+  width: 60px;
+  padding: 0.5%;
+  background-color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
 }
 section .divSections {
   position: absolute;
@@ -412,6 +428,9 @@ label {
 .firebaseui-container {
   font-family: var(--font-family);
   font: 16px var(--font-family);
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 .firebaseui-title {
@@ -424,12 +443,13 @@ label {
 .mdl-button--raised.mdl-button--colored,
 .mdl-button--raised.mdl-button--colored:active,
 .mdl-button--raised.mdl-button--colored:hover {
-  background: var(--green);
+  background: #fff;
   color: black;
   border-radius: 0;
 }
 
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
-  background-color: var(--green);
+  background-color: #fff;
 }
+
 
