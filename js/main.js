@@ -257,13 +257,6 @@ nj3Y2.get().then(function(doc) {
 
 
 
-
-
-
-
-
-
-
 function createUser() {
   // references to the input fields
   let nrCowsInput = document.querySelector("#nrCows");
