@@ -289,7 +289,7 @@ nj3Y2.get().then(function(doc) {
 let nj4Data = [];
 console.log(nj4Data)
 
-nj3Y1.get().then(function(doc) {
+nj4Y1.get().then(function(doc) {
   if (doc.exists){
     // Convert to City object
     let docData = doc.data();
@@ -356,6 +356,402 @@ nj4Y2.get().then(function(doc) {
         console.log("Error getting document:", error)
       });
 
+
+
+       /* Bruger 5 */
+  let nj5Y1 = year1.doc("nj5@gmail.com")
+  let nj5Y2 = year2.doc("nj5@gmail.com")
+  let nj5Y3 = year3.doc("nj5@gmail.com")
+  let nj5Y4 = year4.doc("nj5@gmail.com")
+  let nj5Y5 = year5.doc("nj5@gmail.com")
+  let nj5Y6 = year6.doc("nj5@gmail.com")
+  
+let nj5Data = [];
+console.log(nj5Data)
+
+nj5Y1.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj5Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+  
+
+nj5Y2.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj5Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+
+  nj5Y3.get().then(function(doc) {
+    if (doc.exists){
+      // Convert to City object
+      let docData = doc.data();
+      // Use a City instance method
+      nj5Data.push(docData)
+
+      
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+      console.log("Error getting document:", error)
+    });
+  
+  nj5Y4.get().then(function(doc) {
+    if (doc.exists){
+       // Convert to City object
+       let docData = doc.data();
+       // Use a City instance method
+       nj5Data.push(docData)
+        
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+       console.log("Error getting document:", error)
+     });
+  
+     nj5Y5.get().then(function(doc) {
+      if (doc.exists){
+        // Convert to City object
+        let docData = doc.data();
+        // Use a City instance method
+        nj5Data.push(docData)
+        
+      } else {
+        console.log("No such document!")
+      }}).catch(function(error) {
+        console.log("Error getting document:", error)
+      });
+
+
+
+        /* Bruger 6 */
+  let nj6Y1 = year1.doc("nj6@gmail.com")
+  let nj6Y2 = year2.doc("nj6@gmail.com")
+  let nj6Y3 = year3.doc("nj6@gmail.com")
+  let nj6Y4 = year4.doc("nj6@gmail.com")
+  let nj6Y5 = year5.doc("nj6@gmail.com")
+  let nj6Y6 = year6.doc("nj6@gmail.com")
+  
+let nj6Data = [];
+console.log(nj6Data)
+
+nj6Y1.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj6Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+  
+
+nj6Y2.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj6Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+
+  nj6Y3.get().then(function(doc) {
+    if (doc.exists){
+      // Convert to City object
+      let docData = doc.data();
+      // Use a City instance method
+      nj6Data.push(docData)
+
+      
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+      console.log("Error getting document:", error)
+    });
+  
+  nj6Y4.get().then(function(doc) {
+    if (doc.exists){
+       // Convert to City object
+       let docData = doc.data();
+       // Use a City instance method
+       nj6Data.push(docData)
+        
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+       console.log("Error getting document:", error)
+     });
+  
+     nj6Y5.get().then(function(doc) {
+      if (doc.exists){
+        // Convert to City object
+        let docData = doc.data();
+        // Use a City instance method
+        nj6Data.push(docData)
+        
+      } else {
+        console.log("No such document!")
+      }}).catch(function(error) {
+        console.log("Error getting document:", error)
+      });
+
+
+              /* Bruger 7 */
+  let nj7Y1 = year1.doc("nj6@gmail.com")
+  let nj7Y2 = year2.doc("nj6@gmail.com")
+  let nj7Y3 = year3.doc("nj6@gmail.com")
+  let nj7Y4 = year4.doc("nj6@gmail.com")
+  let nj7Y5 = year5.doc("nj6@gmail.com")
+  let nj7Y6 = year6.doc("nj6@gmail.com")
+  
+let nj7Data = [];
+console.log(nj7Data)
+
+nj7Y1.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj7Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+  
+
+nj7Y2.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj7Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+
+  nj7Y3.get().then(function(doc) {
+    if (doc.exists){
+      // Convert to City object
+      let docData = doc.data();
+      // Use a City instance method
+      nj7Data.push(docData)
+
+      
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+      console.log("Error getting document:", error)
+    });
+  
+  nj7Y4.get().then(function(doc) {
+    if (doc.exists){
+       // Convert to City object
+       let docData = doc.data();
+       // Use a City instance method
+       nj7Data.push(docData)
+        
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+       console.log("Error getting document:", error)
+     });
+  
+     nj7Y5.get().then(function(doc) {
+      if (doc.exists){
+        // Convert to City object
+        let docData = doc.data();
+        // Use a City instance method
+        nj7Data.push(docData)
+        
+      } else {
+        console.log("No such document!")
+      }}).catch(function(error) {
+        console.log("Error getting document:", error)
+      });
+      
+
+                    /* Bruger 8 */
+  let nj8Y1 = year1.doc("nj8@gmail.com")
+  let nj8Y2 = year2.doc("nj8@gmail.com")
+  let nj8Y3 = year3.doc("nj8@gmail.com")
+  let nj8Y4 = year4.doc("nj8@gmail.com")
+  let nj8Y5 = year5.doc("nj8@gmail.com")
+  let nj8Y6 = year6.doc("nj8@gmail.com")
+  
+let nj8Data = [];
+console.log(nj8Data)
+
+nj8Y1.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj8Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+  
+
+nj8Y2.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj8Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+
+  nj8Y3.get().then(function(doc) {
+    if (doc.exists){
+      // Convert to City object
+      let docData = doc.data();
+      // Use a City instance method
+      nj8Data.push(docData)
+
+      
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+      console.log("Error getting document:", error)
+    });
+  
+  nj8Y4.get().then(function(doc) {
+    if (doc.exists){
+       // Convert to City object
+       let docData = doc.data();
+       // Use a City instance method
+       nj8Data.push(docData)
+        
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+       console.log("Error getting document:", error)
+     });
+  
+     nj8Y5.get().then(function(doc) {
+      if (doc.exists){
+        // Convert to City object
+        let docData = doc.data();
+        // Use a City instance method
+        nj8Data.push(docData)
+        
+      } else {
+        console.log("No such document!")
+      }}).catch(function(error) {
+        console.log("Error getting document:", error)
+      });
+
+
+                          /* Bruger 9 */
+  let nj9Y1 = year1.doc("nj9@gmail.com")
+  let nj9Y2 = year2.doc("nj9@gmail.com")
+  let nj9Y3 = year3.doc("nj9@gmail.com")
+  let nj9Y4 = year4.doc("nj9@gmail.com")
+  let nj9Y5 = year5.doc("nj9@gmail.com")
+  let nj9Y6 = year6.doc("nj9@gmail.com")
+  
+let nj9Data = [];
+console.log(nj9Data)
+
+nj9Y1.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj9Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+  
+
+nj9Y2.get().then(function(doc) {
+  if (doc.exists){
+    // Convert to City object
+    let docData = doc.data();
+    // Use a City instance method
+    nj9Data.push(docData)
+    
+  } else {
+    console.log("No such document!")
+  }}).catch(function(error) {
+    console.log("Error getting document:", error)
+  });
+
+  nj9Y3.get().then(function(doc) {
+    if (doc.exists){
+      // Convert to City object
+      let docData = doc.data();
+      // Use a City instance method
+      nj9Data.push(docData)
+
+      
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+      console.log("Error getting document:", error)
+    });
+  
+  nj9Y4.get().then(function(doc) {
+    if (doc.exists){
+       // Convert to City object
+       let docData = doc.data();
+       // Use a City instance method
+       nj9Data.push(docData)
+        
+    } else {
+      console.log("No such document!")
+    }}).catch(function(error) {
+       console.log("Error getting document:", error)
+     });
+  
+     nj9Y5.get().then(function(doc) {
+      if (doc.exists){
+        // Convert to City object
+        let docData = doc.data();
+        // Use a City instance method
+        nj9Data.push(docData)
+        
+      } else {
+        console.log("No such document!")
+      }}).catch(function(error) {
+        console.log("Error getting document:", error)
+      });
       
     
 
