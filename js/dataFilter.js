@@ -185,7 +185,7 @@ function displayUserChart() {
     user9.style.display = "block";
   }
 }
-let show = document.querySelector("#hide");
+let show = document.querySelector(".hide");
 function selectOnlyThisFilter(id){
   let checkboxFilter = document.getElementsByName("checkboxFilter");
   Array.prototype.forEach.call(checkboxFilter,function(el){
