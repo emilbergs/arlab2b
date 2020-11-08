@@ -942,7 +942,7 @@ let dataPrYear = [{
         labels: data.years, // refering to the data object, holding data from prepareData()
         datasets: [{
           data: data.cows, // refering to the data object, holding data from prepareData()
-          label: 'Cows each year',
+          label: 'Antal køer',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
           borderColor: 'rgb(255, 99, 132)'
         }]
@@ -952,7 +952,7 @@ let dataPrYear = [{
       options: {
         title: {
           display: true,
-          text: 'Cows'
+          text: 'Køer'
         }
       }
   
@@ -976,7 +976,7 @@ let dataPrYear = [{
         labels: data.years, // refering to the data object, holding data from prepareData()
         datasets: [{
           data: data.milk, // refering to the data object, holding data from prepareData()
-          label: 'Milk pr cow each year',
+          label: 'Mælk pr. ko',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
           borderColor: 'rgb(255, 99, 132)'
         }]
@@ -986,7 +986,7 @@ let dataPrYear = [{
       options: {
         title: {
           display: true,
-          text: 'Milk'
+          text: 'Mælk'
         }
       }
   
@@ -1009,7 +1009,7 @@ let dataPrYear = [{
         labels: data.years, // refering to the data object, holding data from prepareData()
         datasets: [{
           data: data.diesel, // refering to the data object, holding data from prepareData()
-          label: 'Diesel litre pr year',
+          label: 'Liter diesel',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
           borderColor: 'rgb(255, 99, 132)'
         }]
@@ -1019,7 +1019,7 @@ let dataPrYear = [{
       options: {
         title: {
           display: true,
-          text: 'Diesel Litre'
+          text: 'Diesel'
         }
       }
   
@@ -1042,7 +1042,7 @@ let dataPrYear = [{
             labels: data.years, // refering to the data object, holding data from prepareData()
             datasets: [{
               data: data.kWh, // refering to the data object, holding data from prepareData()
-              label: 'Elektricitet/kWh pr year',
+              label: 'Elektricitet/kWh',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
               borderColor: 'rgb(255, 99, 132)'
             }]
@@ -1052,7 +1052,7 @@ let dataPrYear = [{
           options: {
             title: {
               display: true,
-              text: 'kWh'
+              text: 'El/kWh'
             }
           }
       
@@ -1076,7 +1076,7 @@ let dataPrYear = [{
             labels: data.years, // refering to the data object, holding data from prepareData()
             datasets: [{
               data: data.dryMatter, // refering to the data object, holding data from prepareData()
-              label: 'Kg dry matter pr year',
+              label: 'Kg tørfoder',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
               borderColor: 'rgb(255, 99, 132)'
             }]
@@ -1086,7 +1086,7 @@ let dataPrYear = [{
           options: {
             title: {
               display: true,
-              text: 'Dry matter'
+              text: 'Tørfoder'
             }
           }
       
@@ -1109,7 +1109,7 @@ let dataPrYear = [{
             labels: data.years, // refering to the data object, holding data from prepareData()
             datasets: [{
               data: data.selfFeed, // refering to the data object, holding data from prepareData()
-              label: '% Self-sufficiency in feed pr year',
+              label: '% Selvforsyning af foder',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
               borderColor: 'rgb(255, 99, 132)'
             }]
@@ -1119,7 +1119,7 @@ let dataPrYear = [{
           options: {
             title: {
               display: true,
-              text: 'Self-sufficiency in feed'
+              text: 'Selvforsyning'
             }
           }
       
@@ -1142,7 +1142,7 @@ let dataPrYear = [{
         labels: data.years, // refering to the data object, holding data from prepareData()
         datasets: [{
           data: data.footprint, // refering to the data object, holding data from prepareData()
-          label: 'CO2 footprint pr year',
+          label: 'CO2 udslip',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
           borderColor: 'rgb(255, 99, 132)'
         }]
@@ -1152,7 +1152,7 @@ let dataPrYear = [{
       options: {
         title: {
           display: true,
-          text: 'CO2 footprint pr year'
+          text: 'CO2'
         }
       }
   
