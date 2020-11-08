@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arla B2B</title>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" /> 
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body onhashchange="pageChange()">
-    <section id="home" class="page">
+  <section id="home">
+    <section id="firebaseui-auth-container page"></section>
+    <a href="#side1">Til side1</a>
+  </section>
+    <section id="side1" class="page">
       <div class="root"></div>
         <div class="progressContainer">
             <ul class="progress-bar">
@@ -35,7 +41,7 @@
                 <input type="text" id="diesel" name="lname" placeholder="Diesel litre">
             </form>
             <div class="buttons">
-            <a class="tilbage bold">Tilbage</a>
+            <a href="#home" class="tilbage bold">Tilbage</a>
             <a href="#side2" class="næste bold">Næste</a>
         </div>
         </div>
@@ -67,7 +73,7 @@
                 <input type="text" id="electricity" name="lname" placeholder="Electricity kWh">
         </form>
         <div class="buttons">
-        <a href="#home" class="tilbage bold">Tilbage</a>
+        <a href="#side1" class="tilbage bold">Tilbage</a>
         <a href="#side3" class="næste bold">Næste</a>
     </div>
     </div>
@@ -291,6 +297,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/auth.js"></script>
     <script src="js/spa.js"></script>
     <script src="js/dataFilter.js"></script>
     <script src="js/charts.js"></script>

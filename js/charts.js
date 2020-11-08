@@ -95,7 +95,6 @@ let dataPrYear = [{
     // using prepareData() to get the excact data we want
     let data = prepareData(cowData);
     //open the developer console to inspect the result
-    console.log(data);
     let chartContainer1 = document.getElementById('chartContainer1');
     let chart = new Chart(chartContainer1, {
       // The type of chart we want to create
@@ -130,7 +129,6 @@ let dataPrYear = [{
     // using prepareData() to get the excact data we want
     let data = prepareData(milkData);
     //open the developer console to inspect the result
-    console.log(data);
     let chartContainer2 = document.getElementById('chartContainer2');
     let chart = new Chart(chartContainer2, {
       // The type of chart we want to create
@@ -164,7 +162,6 @@ let dataPrYear = [{
     // using prepareData() to get the excact data we want
     let data = prepareData(dieselData);
     //open the developer console to inspect the result
-    console.log(data);
     let chartContainer3 = document.getElementById('chartContainer3');
     let chart = new Chart(chartContainer3, {
       // The type of chart we want to create
@@ -198,7 +195,6 @@ let dataPrYear = [{
         // using prepareData() to get the excact data we want
         let data = prepareData(kWhData);
         //open the developer console to inspect the result
-        console.log(data);
         let chartContainer4 = document.getElementById('chartContainer4');
         let chart = new Chart(chartContainer4, {
           // The type of chart we want to create
@@ -233,7 +229,6 @@ let dataPrYear = [{
         // using prepareData() to get the excact data we want
         let data = prepareData(dryData);
         //open the developer console to inspect the result
-        console.log(data);
         let chartContainer5 = document.getElementById('chartContainer5');
         let chart = new Chart(chartContainer5, {
           // The type of chart we want to create
@@ -267,7 +262,6 @@ let dataPrYear = [{
         // using prepareData() to get the excact data we want
         let data = prepareData(selfFeedData);
         //open the developer console to inspect the result
-        console.log(data);
         let chartContainer6 = document.getElementById('chartContainer6');
         let chart = new Chart(chartContainer6, {
           // The type of chart we want to create
@@ -301,7 +295,6 @@ let dataPrYear = [{
     // using prepareData() to get the excact data we want
     let data = prepareData(footPrintData);
     //open the developer console to inspect the result
-    console.log(data);
     let chartContainer7 = document.getElementById('chartContainer7');
     let chart = new Chart(chartContainer7, {
       // The type of chart we want to create
