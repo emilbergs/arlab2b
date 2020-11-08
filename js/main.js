@@ -38,8 +38,8 @@ function createUser() {
       selfFeed: selfFeedInput.value
   };
     firebase.auth().onAuthStateChanged(function (user) {
-    console.log(user.uid);
-    yearSix.doc(user.uid).set(newUser);
+    console.log(user.email);
+    yearSix.doc(user.email).set(newUser);
   });
 }
 
@@ -75,9 +75,9 @@ let _firebaseUI;
 // ========== FIREBASE AUTH ========== //
 // Listen on authentication state change
 firebase.auth().onAuthStateChanged(function (user) {
+  console.log(user);
   if (user) { // if user exists and is authenticated
     userAuthenticated(user);
-    console.log(user);
   } else { // if user is not logged in
     userNotAuthenticated();
   }
