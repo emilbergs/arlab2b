@@ -13,7 +13,7 @@ firebase.initializeApp(firebaseConfig);
 
   const db = firebase.firestore();
   const yearOne = db.collection("yearOne")
-  const yearSix = db.collection("yearTwo");
+  const yearSix = db.collection("yearSix");
   
 
 
@@ -75,9 +75,9 @@ let _firebaseUI;
 // ========== FIREBASE AUTH ========== //
 // Listen on authentication state change
 firebase.auth().onAuthStateChanged(function (user) {
-  console.log(user);
   if (user) { // if user exists and is authenticated
     userAuthenticated(user);
+    console.log(user);
   } else { // if user is not logged in
     userNotAuthenticated();
   }
