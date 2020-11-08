@@ -256,11 +256,11 @@ span.completed {
 }
 span.current {
   border-color: #232323;
-  background-color: #232323;
+  background-color:white;
   color: #232323;
 }
 .current img {
-  width: 90%;
+  width: 80%;
 }
 
 #svarReg {
@@ -293,6 +293,10 @@ span.current {
 
 #carbonResult img {
   width: 50%;
+}
+
+.iconProgess {
+  width: 60%;
 }
 
 /* Data section */
