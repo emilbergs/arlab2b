@@ -1,5 +1,4 @@
-
-
+/*
 let dataPrYear = [{
     year: "2015",
     cows: 51,
@@ -322,4 +321,4 @@ let dataPrYear = [{
   }
 
   appendFootprintChart(dataPrYear);
- 
+ */

@@ -41,7 +41,7 @@
                 <input type="text" id="diesel" name="lname" placeholder="Diesel litre">
             </form>
             <div class="buttons">
-            <a href="#" class="tilbage bold">Tilbage</a>
+            <a href="#home" class="tilbage bold" onclick="logout()">Log ud</a>
             <a href="#side2" class="næste bold">Næste</a>
         </div>
         </div>
@@ -211,6 +211,7 @@
               <h2>Regioner</h2>
               <form>
                 <select name="vælgRegion" id="vælgRegion" onchange="skiftRegion(this.value)">
+                  <option value="dineData">Dine data</option>
                   <option value="nordjylland">Nordjylland</option>
                   <option value="midtjylland">Midtjylland</option>
                   <option value="syddanmark">Syddanmark</option>
@@ -218,25 +219,195 @@
                   <option value="hovedstaden">Hovedstaden</option>
                 </select>
               <div id="gårdIRegion">
-                <div class="flex">
-                  <label for="cowsBox">Nordjylland Gård 1</label>
-                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                <div id="nj">
+                  <div class="flex">
+                    <label for="cowsBox">NJ1 Gård</label>
+                    <input type="checkbox" id="nj1" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ2 Gård</label>
+                    <input type="checkbox" id="nj2" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ3 Gård</label>
+                    <input type="checkbox" id="nj3" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ4 Gård</label>
+                    <input type="checkbox" id="nj4" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ5 Gård</label>
+                    <input type="checkbox" id="nj5" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ6 Gård</label>
+                    <input type="checkbox" id="nj6" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ7 Gård</label>
+                    <input type="checkbox" id="nj7" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ8 Gård</label>
+                    <input type="checkbox" id="nj8" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">NJ9 Gård</label>
+                    <input type="checkbox" id="nj9" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
                 </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 2</label>
-                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                <div id="mj">
+                  <div class="flex">
+                    <label for="cowsBox">MJ1 Gård</label>
+                    <input type="checkbox" id="mj1" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ2 Gård</label>
+                    <input type="checkbox" id="mj2" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ3 Gård</label>
+                    <input type="checkbox" id="mj3" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ4 Gård</label>
+                    <input type="checkbox" id="mj4" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ5 Gård</label>
+                    <input type="checkbox" id="mj5" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ6 Gård</label>
+                    <input type="checkbox" id="nj6" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ7 Gård</label>
+                    <input type="checkbox" id="Mj7" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ8 Gård</label>
+                    <input type="checkbox" id="mj8" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">MJ9 Gård</label>
+                    <input type="checkbox" id="mj9" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
                 </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 3</label>
-                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                <div id="sd">
+                  <div class="flex">
+                    <label for="cowsBox">SD1 Gård</label>
+                    <input type="checkbox" id="sd1" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD2 Gård</label>
+                    <input type="checkbox" id="sd2" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD3 Gård</label>
+                    <input type="checkbox" id="sd3" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD4 Gård</label>
+                    <input type="checkbox" id="sd4" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD5 Gård</label>
+                    <input type="checkbox" id="sd5" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD6 Gård</label>
+                    <input type="checkbox" id="sd6" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD7 Gård</label>
+                    <input type="checkbox" id="sd7" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD8 Gård</label>
+                    <input type="checkbox" id="sd8" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SD9 Gård</label>
+                    <input type="checkbox" id="sd9" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
                 </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 4</label>
-                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                <div id="sl">
+                  <div class="flex">
+                    <label for="cowsBox">SL1 Gård</label>
+                    <input type="checkbox" id="sl1" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL2 Gård</label>
+                    <input type="checkbox" id="sl2" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL3 Gård</label>
+                    <input type="checkbox" id="sl3" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL4 Gård</label>
+                    <input type="checkbox" id="sl4" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL5 Gård</label>
+                    <input type="checkbox" id="sl5" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL6 Gård</label>
+                    <input type="checkbox" id="sl6" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL7 Gård</label>
+                    <input type="checkbox" id="sl7" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL8 Gård</label>
+                    <input type="checkbox" id="sl8" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">SL9 Gård</label>
+                    <input type="checkbox" id="sl9" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
                 </div>
-                <div class="flex">
-                  <label for="cowsBox">Gård 5</label>
-                  <input type="checkbox" id="" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                <div id="hs">
+                  <div class="flex">
+                    <label for="cowsBox">HS1 Gård</label>
+                    <input type="checkbox" id="hs1" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS2 Gård</label>
+                    <input type="checkbox" id="hs2" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS3 Gård</label>
+                    <input type="checkbox" id="hs3" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS4 Gård</label>
+                    <input type="checkbox" id="hs4" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS5 Gård</label>
+                    <input type="checkbox" id="hs5" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS6 Gård</label>
+                    <input type="checkbox" id="hs6" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS7 Gård</label>
+                    <input type="checkbox" id="hs7" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS8 Gård</label>
+                    <input type="checkbox" id="hs8" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
+                  <div class="flex">
+                    <label for="cowsBox">HS9 Gård</label>
+                    <input type="checkbox" id="hs9" name="checkboxRegion" onclick="selectOnlyThisRegion(this)">
+                  </div>
                 </div>
               </div>
               </form>
@@ -278,13 +449,88 @@
             </div>
           </div>
           <div id="graphs">
-            <canvas id="chartContainer1"></canvas>
-            <canvas id="chartContainer2"></canvas>
-            <canvas id="chartContainer3"></canvas>
-            <canvas id="chartContainer4"></canvas>
-            <canvas id="chartContainer5"></canvas>
-            <canvas id="chartContainer6"></canvas>
-            <canvas id="chartContainer7"></canvas>
+            <div id="user1">
+              <canvas id="user1ChartContainer1"></canvas>
+              <canvas id="user1ChartContainer2"></canvas>
+              <canvas id="user1ChartContainer3"></canvas>
+              <canvas id="user1ChartContainer4"></canvas>
+              <canvas id="user1ChartContainer5"></canvas>
+              <canvas id="user1ChartContainer6"></canvas>
+              <canvas id="user1ChartContainer7"></canvas>
+            </div>
+            <div id="user2">
+              <canvas id="user2ChartContainer1"></canvas>
+              <canvas id="user2ChartContainer2"></canvas>
+              <canvas id="user2ChartContainer3"></canvas>
+              <canvas id="user2ChartContainer4"></canvas>
+              <canvas id="user2ChartContainer5"></canvas>
+              <canvas id="user2ChartContainer6"></canvas>
+              <canvas id="user2ChartContainer7"></canvas>
+            </div>
+            <div id="user3">
+              <canvas id="user3ChartContainer1"></canvas>
+              <canvas id="user3ChartContainer2"></canvas>
+              <canvas id="user3ChartContainer3"></canvas>
+              <canvas id="user3ChartContainer4"></canvas>
+              <canvas id="user3ChartContainer5"></canvas>
+              <canvas id="user3ChartContainer6"></canvas>
+              <canvas id="user3ChartContainer7"></canvas>
+            </div>
+            <div id="user4">
+              <canvas id="user4ChartContainer1"></canvas>
+              <canvas id="user4ChartContainer2"></canvas>
+              <canvas id="user4ChartContainer3"></canvas>
+              <canvas id="user4ChartContainer4"></canvas>
+              <canvas id="user4ChartContainer5"></canvas>
+              <canvas id="user4ChartContainer6"></canvas>
+              <canvas id="user4ChartContainer7"></canvas>
+            </div>
+            <div id="user5">
+              <canvas id="user5ChartContainer1"></canvas>
+              <canvas id="user5ChartContainer2"></canvas>
+              <canvas id="user5ChartContainer3"></canvas>
+              <canvas id="user5ChartContainer4"></canvas>
+              <canvas id="user5ChartContainer5"></canvas>
+              <canvas id="user5ChartContainer6"></canvas>
+              <canvas id="user5ChartContainer7"></canvas>
+            </div>
+            <div id="user6">
+              <canvas id="user6ChartContainer1"></canvas>
+              <canvas id="user6ChartContainer2"></canvas>
+              <canvas id="user6ChartContainer3"></canvas>
+              <canvas id="user6ChartContainer4"></canvas>
+              <canvas id="user6ChartContainer5"></canvas>
+              <canvas id="user6ChartContainer6"></canvas>
+              <canvas id="user6ChartContainer7"></canvas>
+            </div>
+            <div id="user7">
+              <canvas id="user7ChartContainer1"></canvas>
+              <canvas id="user7ChartContainer2"></canvas>
+              <canvas id="user7ChartContainer3"></canvas>
+              <canvas id="user7ChartContainer4"></canvas>
+              <canvas id="user7ChartContainer5"></canvas>
+              <canvas id="user7ChartContainer6"></canvas>
+              <canvas id="user7ChartContainer7"></canvas>
+            </div>
+            <div id="user8">
+              <canvas id="user8ChartContainer1"></canvas>
+              <canvas id="user8ChartContainer2"></canvas>
+              <canvas id="user8ChartContainer3"></canvas>
+              <canvas id="user8ChartContainer4"></canvas>
+              <canvas id="user8ChartContainer5"></canvas>
+              <canvas id="user8ChartContainer6"></canvas>
+              <canvas id="user8ChartContainer7"></canvas>
+            </div>
+            <div id="user9">
+              <canvas id="usecr1ChartContainer1"></canvas>
+              <canvas id="user9ChartContainer2"></canvas>
+              <canvas id="user9ChartContainer3"></canvas>
+              <canvas id="user9ChartContainer4"></canvas>
+              <canvas id="user9ChartContainer5"></canvas>
+              <canvas id="user9ChartContainer6"></canvas>
+              <canvas id="user9ChartContainer7"></canvas>
+            </div>
+            
 
           </div>
         </div>

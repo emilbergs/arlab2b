@@ -83,7 +83,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 section {
@@ -313,6 +313,9 @@ span.current {
 
 .flex {
   display: flex;
+  border-bottom: 1px solid;
+  border-color: #f0f0f0;
+
 }
 
 #midtjylland {
@@ -378,6 +381,10 @@ label {
   left: 45%;
 }
 
+#nj, #mj, #sd, #sl, #hs {
+  display: none;
+}
+
 /* ---------- authentication styling ---------- */
 #firebaseui-auth-container {
   position: absolute;
@@ -410,3 +417,4 @@ label {
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
   background-color: var(--green);
 }
+
