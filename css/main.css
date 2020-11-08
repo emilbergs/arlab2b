@@ -385,6 +385,13 @@ label {
   display: none;
 }
 
+#show {
+  display: block;
+}
+#hide {
+  display: none;
+}
+
 /* ---------- authentication styling ---------- */
 #firebaseui-auth-container {
   position: absolute;

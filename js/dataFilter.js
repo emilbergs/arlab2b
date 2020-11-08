@@ -61,71 +61,71 @@ function skiftRegion() {
   let dryMatterBox = document.querySelector("#dryMatterBox");
   let selfFeedBox = document.querySelector("#selfFeedBox");
   let footprint = document.querySelector("#footprint");
-  let chartContainer1 = document.querySelector("#user1ChartContainer1")
-  let chartContainer2 = document.querySelector("#user1ChartContainer2")
-  let chartContainer3 = document.querySelector("#user1ChartContainer3")
-  let chartContainer4 = document.querySelector("#user1ChartContainer4")
-  let chartContainer5 = document.querySelector("#user1ChartContainer5")
-  let chartContainer6 = document.querySelector("#user1ChartContainer6")
-  let chartContainer7 = document.querySelector("#user1ChartContainer7")
+  let user1ChartContainer1 = document.querySelector("#user1ChartContainer1")
+  let user1ChartContainer2 = document.querySelector("#user1ChartContainer2")
+  let user1ChartContainer3 = document.querySelector("#user1ChartContainer3")
+  let user1ChartContainer4 = document.querySelector("#user1ChartContainer4")
+  let user1ChartContainer5 = document.querySelector("#user1ChartContainer5")
+  let user1ChartContainer6 = document.querySelector("#user1ChartContainer6")
+  let user1ChartContainer7 = document.querySelector("#user1ChartContainer7")
 
 function displayChart() {
   if (cowBox.checked == true) {
-    chartContainer1.style.display = "block";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "block";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "none";
   } else if (milkBox.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "block";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "block";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "none";
   } else if (dieselBox.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "block";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "block";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "none";
   } else if (electricityBox.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "block";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "block";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "none";
   } else if (dryMatterBox.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "block";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "block";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "none";
   } else if (selfFeedBox.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "block";
-    chartContainer7.style.display = "none";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "block";
+    user1ChartContainer7.style.display = "none";
   } else if (footprint.checked == true) {
-    chartContainer1.style.display = "none";
-    chartContainer2.style.display = "none";
-    chartContainer3.style.display = "none";
-    chartContainer4.style.display = "none";
-    chartContainer5.style.display = "none";
-    chartContainer6.style.display = "none";
-    chartContainer7.style.display = "block";
+    user1ChartContainer1.style.display = "none";
+    user1ChartContainer2.style.display = "none";
+    user1ChartContainer3.style.display = "none";
+    user1ChartContainer4.style.display = "none";
+    user1ChartContainer5.style.display = "none";
+    user1ChartContainer6.style.display = "none";
+    user1ChartContainer7.style.display = "block";
   } 
 }
 let user1 = document.querySelector("#user1");
@@ -185,13 +185,14 @@ function displayUserChart() {
     user9.style.display = "block";
   }
 }
-
+let show = document.querySelector("#hide");
 function selectOnlyThisFilter(id){
   let checkboxFilter = document.getElementsByName("checkboxFilter");
   Array.prototype.forEach.call(checkboxFilter,function(el){
   	el.checked = false;
   });
   id.checked = true;
+  show.style.display = "block"
   displayChart()
 }
 function selectOnlyThisRegion(id){
