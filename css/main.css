@@ -48,7 +48,10 @@
   html,
   body {
     font-family: 'Arla InterFace';
-    
+    background-image: url(../img/arla-cows.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
   }
   #logo {
     margin-top: 20vh;
@@ -93,10 +96,6 @@ body {
 section {
     min-width: 100vw;
     min-height: 100vh;
-    background-image: url(/img/arla-cows1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -200px;
     text-align: center;
 }
 section #home {
