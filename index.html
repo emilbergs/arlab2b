@@ -152,7 +152,7 @@
             </ul>
           </div>
         <div class="divSections">
-          <img src="img/electricity.png" alt="elektrisitet ikon">
+          <img src="img/electricity.png" alt="elektricitet ikon">
             <form>
               <input type="text" id="electricity" name="lname" placeholder="Elektricitet i kWh ...">
             </form>
@@ -286,7 +286,7 @@
         <h3>Vi bruger præcis dine data til at forbedre verden og vores produkter hver dag.</h3>
       </div>
       <div class="buttons">
-        <a href="#indsend" class="tilbage bold">Tilbage</a>
+        <a href="#home" class="tilbage bold" onclick="logout()">Log ud</a>
         <a href="#sedata" class="næste bold">Se data</a>
     </div>
     </div>
@@ -294,18 +294,7 @@
   <section id="sedata" class="page">
     <div class="divSections">
       <div id="data">
-        <div id="kvartalData">
-          <form id="kvartalForm">
-            <select name="kvartal" id="kvartal">
-              <option value="2020">2020</option>
-              <option value="2020">2019</option>
-              <option value="2020">2018</option>
-              <option value="2020">2017</option>
-              <option value="2020">2016</option>
-              <option value="2020">2015</option>
-            </select>
-          </form>
-        </div>
+        <a href="#home" class="logud bold" onclick="logout()">Log ud</a>
         <h1>Data</h1>
         <div class="flex">
           <div id="regionerne">
@@ -532,7 +521,7 @@
                   <input type="checkbox" id="dieselBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)"> 
                 </div>
                 <div class="flex">
-                 <label for="electricityBox">Elektrisitet</label>
+                 <label for="electricityBox">Elektricitet</label>
                  <input type="checkbox" id="electricityBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)">
                 </div>
                 <div class="flex">
@@ -540,7 +529,7 @@
                  <input type="checkbox" id="dryMatterBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)">
                </div>
                 <div class="flex">
-                  <label for="selfFeedBox">Selvforsyning</label>
+                  <label for="selfFeedBox">Selvforsyning af foder</label>
                   <input type="checkbox" id="selfFeedBox" name="checkboxFilter" onclick="selectOnlyThisFilter(this)">
                 </div>
                 <div class="flex">
@@ -552,102 +541,74 @@
           </div>
           <div id="graphs">
             <div id="user1">
-              <div class="show">
-                <canvas id="user1ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
-                <canvas id="user1ChartContainer2"></canvas>
-                <canvas id="user1ChartContainer3"></canvas>
-                <canvas id="user1ChartContainer4"></canvas>
-                <canvas id="user1ChartContainer5"></canvas>
-                <canvas id="user1ChartContainer6"></canvas>
-                <canvas id="user1ChartContainer7"></canvas>
-              </div>
+                <div class="show">
+                  <canvas id="user1ChartContainer1"></canvas>
+                </div>
+                <div class="hide">
+                  <canvas id="user1ChartContainer2"></canvas>
+                  <canvas id="user1ChartContainer3"></canvas>
+                  <canvas id="user1ChartContainer4"></canvas>
+                  <canvas id="user1ChartContainer5"></canvas>
+                  <canvas id="user1ChartContainer6"></canvas>
+                  <canvas id="user1ChartContainer7"></canvas>
+                </div>
             </div>
             <div id="user2">
-              <div class="show">
                 <canvas id="user2ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user2ChartContainer2"></canvas>
                 <canvas id="user2ChartContainer3"></canvas>
                 <canvas id="user2ChartContainer4"></canvas>
                 <canvas id="user2ChartContainer5"></canvas>
                 <canvas id="user2ChartContainer6"></canvas>
                 <canvas id="user2ChartContainer7"></canvas>
-              </div>
             </div>
             <div id="user3">
-              <div class="show">
                 <canvas id="user3ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user3ChartContainer2"></canvas>
                 <canvas id="user3ChartContainer3"></canvas>
                 <canvas id="user3ChartContainer4"></canvas>
                 <canvas id="user3ChartContainer5"></canvas>
                 <canvas id="user3ChartContainer6"></canvas>
                 <canvas id="user3ChartContainer7"></canvas>
-              </div>
             </div>
-            <div class="user4">
-              <div class="show">
+            <div id="user4">
                 <canvas id="user4ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user4ChartContainer2"></canvas>
                 <canvas id="user4ChartContainer3"></canvas>
                 <canvas id="user4ChartContainer4"></canvas>
                 <canvas id="user4ChartContainer5"></canvas>
                 <canvas id="user4ChartContainer6"></canvas>
                 <canvas id="user4ChartContainer7"></canvas>
-              </div>
             </div>
             <div id="user5">
-              <div class="show">
                 <canvas id="user5ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user5ChartContainer2"></canvas>
                 <canvas id="user5ChartContainer3"></canvas>
                 <canvas id="user5ChartContainer4"></canvas>
                 <canvas id="user5ChartContainer5"></canvas>
                 <canvas id="user5ChartContainer6"></canvas>
                 <canvas id="user5ChartContainer7"></canvas>
-              </div>
             </div>
             <div id="user6">
-              <div class="show">
                 <canvas id="user6ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user6ChartContainer2"></canvas>
                 <canvas id="user6ChartContainer3"></canvas>
                 <canvas id="user6ChartContainer4"></canvas>
                 <canvas id="user6ChartContainer5"></canvas>
                 <canvas id="user6ChartContainer6"></canvas>
                 <canvas id="user6ChartContainer7"></canvas>
-              </div>
             </div>
             <div id="user7">
-              <div class="show">
                 <canvas id="user7ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user7ChartContainer2"></canvas>
                 <canvas id="user7ChartContainer3"></canvas>
                 <canvas id="user7ChartContainer4"></canvas>
                 <canvas id="user7ChartContainer5"></canvas>
                 <canvas id="user7ChartContainer6"></canvas>
-                <canvas id="user7ChartContainer7"></canvas>
-              </div>
-              
+                <canvas id="user7ChartContainer7"></canvas> 
             </div>
             <div id="user8">
-              <div class="show">
                 <canvas id="user8ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user8ChartContainer2"></canvas>
                 <canvas id="user8ChartContainer3"></canvas>
                 <canvas id="user8ChartContainer4"></canvas>
@@ -655,18 +616,14 @@
                 <canvas id="user8ChartContainer6"></canvas>
                 <canvas id="user8ChartContainer7"></canvas>
               </div>
-            </div>
             <div id="user9">
-              <div class="show">
                 <canvas id="user9ChartContainer1"></canvas>
-              </div>
-              <div class="hide">
                 <canvas id="user9ChartContainer2"></canvas>
-              <canvas id="user9ChartContainer3"></canvas>
-              <canvas id="user9ChartContainer4"></canvas>
-              <canvas id="user9ChartContainer5"></canvas>
-              <canvas id="user9ChartContainer6"></canvas>
-              <canvas id="user9ChartContainer7"></canvas>
+                <canvas id="user9ChartContainer3"></canvas>
+                <canvas id="user9ChartContainer4"></canvas>
+                <canvas id="user9ChartContainer5"></canvas>
+                <canvas id="user9ChartContainer6"></canvas>
+                <canvas id="user9ChartContainer7"></canvas>
               </div>
             </div>
           </div>

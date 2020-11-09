@@ -350,6 +350,10 @@ span.current {
 
 }
 
+#data .flex {
+  margin-top: 20vh;
+}
+
 #midtjylland {
   display: none;
 }
@@ -391,9 +395,7 @@ label {
   padding: 1%;
   background-color: white;
 }
-#chartContainer1 {
-  display: none;
-}
+
 #filterForm .flex {
   margin: 5% 0 5% 0;
 }
@@ -417,12 +419,8 @@ label {
   display: none;
 }
 
-.show {
-  display: block;
-}
-.hide {
-  display: none;
-}
+
+
 
 /* ---------- authentication styling ---------- */
 #firebaseui-auth-container {
@@ -461,3 +459,22 @@ label {
 }
 
 
+#user1ChartContainer2 {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+.logud {
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  padding: 1%;
+  border-radius: 12px;
+  border: 1px solid;
+  border-color: lightgray;
+}

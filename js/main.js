@@ -98,12 +98,23 @@ nj1Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj1Data.push(docData)
+
+        appendCowChart1(nj1Data);
+        appendMilkChart1(nj1Data); 
+        appendDieselChart1(nj1Data);
+        appendKWhChart1(nj1Data);
+        appendDryChart1(nj1Data);
+        appendSelfFeedChart1(nj1Data)
+        appendFootprintChart1(nj1Data)
+         
         
       } else {
         console.log("No such document!")
       }}).catch(function(error) {
         console.log("Error getting document:", error)
+
       });
+      
     
   
 
@@ -182,6 +193,14 @@ nj2Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj2Data.push(docData)
+
+        appendCowChart2(nj2Data);
+        appendMilkChart2(nj2Data);
+        appendDieselChart2(nj2Data);
+        appendKWhChart2(nj2Data);
+        appendDryChart2(nj2Data);
+        appendSelfFeedChart2(nj2Data)
+        appendFootprintChart2(nj2Data) 
         
       } else {
         console.log("No such document!")
@@ -265,6 +284,13 @@ nj3Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj3Data.push(docData)
+        appendCowChart3(nj3Data);
+        appendMilkChart3(nj3Data);
+        appendDieselChart3(nj3Data);
+        appendKWhChart3(nj3Data);
+        appendDryChart3(nj3Data);
+        appendSelfFeedChart3(nj3Data)
+        appendFootprintChart3(nj3Data)
         
       } else {
         console.log("No such document!")
@@ -349,6 +375,13 @@ nj4Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj4Data.push(docData)
+        appendCowChart4(nj4Data)
+        appendMilkChart4(nj4Data);
+        appendDieselChart4(nj4Data);
+        appendKWhChart4(nj4Data);
+        appendDryChart4(nj4Data);
+        appendSelfFeedChart4(nj4Data)
+        appendFootprintChart4(nj4Data)
         
       } else {
         console.log("No such document!")
@@ -429,6 +462,13 @@ nj5Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj5Data.push(docData)
+        appendCowChart5(nj5Data)
+        appendMilkChart5(nj5Data);
+        appendDieselChart5(nj5Data);
+        appendKWhChart5(nj5Data);
+        appendDryChart5(nj5Data);
+        appendSelfFeedChart5(nj5Data)
+        appendFootprintChart5(nj5Data)
         
       } else {
         console.log("No such document!")
@@ -509,6 +549,13 @@ nj6Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj6Data.push(docData)
+        appendCowChart6(nj6Data)
+        appendMilkChart6(nj6Data);
+        appendDieselChart6(nj6Data);
+        appendKWhChart6(nj6Data);
+        appendDryChart6(nj6Data);
+        appendSelfFeedChart6(nj6Data)
+        appendFootprintChart6(nj6Data)
         
       } else {
         console.log("No such document!")
@@ -518,12 +565,12 @@ nj6Y2.get().then(function(doc) {
 
 
               /* Bruger 7 */
-  let nj7Y1 = year1.doc("nj6@gmail.com")
-  let nj7Y2 = year2.doc("nj6@gmail.com")
-  let nj7Y3 = year3.doc("nj6@gmail.com")
-  let nj7Y4 = year4.doc("nj6@gmail.com")
-  let nj7Y5 = year5.doc("nj6@gmail.com")
-  let nj7Y6 = year6.doc("nj6@gmail.com")
+  let nj7Y1 = year1.doc("nj7@gmail.com")
+  let nj7Y2 = year2.doc("nj7@gmail.com")
+  let nj7Y3 = year3.doc("nj7@gmail.com")
+  let nj7Y4 = year4.doc("nj7@gmail.com")
+  let nj7Y5 = year5.doc("nj7@gmail.com")
+  let nj7Y6 = year6.doc("nj7@gmail.com")
   
 let nj7Data = [];
 console.log(nj7Data)
@@ -588,6 +635,13 @@ nj7Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj7Data.push(docData)
+        appendCowChart7(nj7Data)
+        appendMilkChart7(nj7Data);
+        appendDieselChart7(nj7Data);
+        appendKWhChart7(nj7Data);
+        appendDryChart7(nj7Data);
+        appendSelfFeedChart7(nj7Data)
+        appendFootprintChart7(nj7Data)
         
       } else {
         console.log("No such document!")
@@ -667,7 +721,13 @@ nj8Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj8Data.push(docData)
-        
+        appendCowChart8(nj8Data)
+        appendMilkChart8(nj8Data);
+        appendDieselChart8(nj8Data);
+        appendKWhChart8(nj8Data);
+        appendDryChart8(nj8Data);
+        appendSelfFeedChart8(nj8Data)
+        appendFootprintChart8(nj8Data)
       } else {
         console.log("No such document!")
       }}).catch(function(error) {
@@ -746,6 +806,13 @@ nj9Y2.get().then(function(doc) {
         let docData = doc.data();
         // Use a City instance method
         nj9Data.push(docData)
+        appendCowChart9(nj9Data);
+        appendMilkChart9(nj9Data);
+        appendDieselChart9(nj9Data);
+        appendKWhChart9(nj9Data);
+        appendDryChart9(nj9Data);
+        appendSelfFeedChart9(nj9Data);
+        appendFootprintChart9(nj9Data);
         
       } else {
         console.log("No such document!")
@@ -770,6 +837,7 @@ function createUser() {
   
 
   let newUser = {
+      year: "2020",
       yearCows: nrCowsInput.value,
       kgMilk: kgMilkInput.value,
       diesel: dieselInput.value,
@@ -804,17 +872,13 @@ let _firebaseUI;
 firebase.auth().onAuthStateChanged(function (user) {
   console.log(user);
   if (user) { // if user exists and is authenticated
-    userAuthenticated(user);
+    console.log(user.email)
   } else { // if user is not logged in
     userNotAuthenticated();
   }
 });
 
-function userAuthenticated(user) {
-  appendUserData(user);
-  hideTabbar(false);
-  showLoader(false);
-}
+
 
 function userNotAuthenticated() {
   showPage("home");
@@ -838,57 +902,9 @@ function logout() {
   firebase.auth().signOut();
 }
 
-let dataPrYear = [{
-    year: "2015",
-    cows: 51,
-    milk:10185.449,
-    dryMatter:8139.350,
-    diesel: 8284.000,
-    kWh: 41640.000,
-    selfFeed: 79.225,
-    footprint: 504.462
-  }, 
-  {
-    year: "2016",
-    cows: 50,
-    milk: 9075.765,
-    dryMatter: 5568.238,
-    diesel: 5880.060,
-    kWh: 67654.000,
-    selfFeed: 84.154,
-    footprint: 445.563
-  }, 
-  {
-    year: "2017",
-    cows: 49,
-    milk: 9927.232,
-    dryMatter: 6465.915,
-    diesel: 11475.330,
-    kWh: 48613.000,
-    selfFeed: 68.585,
-    footprint: 464.516
-  }, 
-  {
-    year: "2018",
-    cows: 51,
-    milk: 8830.039,
-    dryMatter: 6083.323,
-    diesel: 10353.000,
-    kWh: 45564.000,
-    selfFeed: 64.909,
-    footprint: 399.700
-  }, 
-  {
-    year: "2019",
-    cows: 50,
-    milk: 7830.036,
-    dryMatter: 5469.291,
-    diesel: 9873.000,
-    kWh: 44975.000,
-    selfFeed: 69.413,
-    footprint: 370.858
-  }
-  ];
+
+
+
   // 2: prepare data for chart
   // seperating the objects to arrays: months and sales
   // why? that's how chart.js reads the data :)
@@ -906,11 +922,11 @@ let dataPrYear = [{
     for (const object of data) {
       // adding the values to the different arrays
       years.push(object.year);
-      cows.push(object.cows);
-      milk.push(object.milk);
+      cows.push(object.yearCows);
+      milk.push(object.kgMilk);
       dryMatter.push(object.dryMatter);
       diesel.push(object.diesel);
-      kWh.push(object.kWh);
+      kWh.push(object.electricity);
       selfFeed.push(object.selfFeed);
       footprint.push(object.footprint)
     }
@@ -929,7 +945,7 @@ let dataPrYear = [{
   }
   
   // 3: create and append the chart
-  function appendCowChart(cowData) {
+  function appendCowChart1(cowData) {
     // using prepareData() to get the excact data we want
     let data = prepareData(cowData);
     //open the developer console to inspect the result
@@ -944,7 +960,7 @@ let dataPrYear = [{
           data: data.cows, // refering to the data object, holding data from prepareData()
           label: 'Antal køer',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-          borderColor: 'rgb(255, 99, 132)'
+          borderColor: '#6A6747'
         }]
       },
       // Configuration options goes here
@@ -958,12 +974,248 @@ let dataPrYear = [{
   
     });
   }
-  appendCowChart(dataPrYear);
+
+  function appendCowChart2(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user2ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
   
 
+  function appendCowChart3(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user3ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
+  function appendCowChart4(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user4ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
 
+  function appendCowChart5(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user5ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
+
+  function appendCowChart6(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user6ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
+
+  function appendCowChart7(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user7ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
+
+  function appendCowChart8(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user8ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
+
+  function appendCowChart9(cowData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(cowData);
+    //open the developer console to inspect the result
+    let chartContainer1 = document.getElementById('user9ChartContainer1');
+    let chart = new Chart(chartContainer1, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.cows, // refering to the data object, holding data from prepareData()
+          label: 'Antal køer',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Køer'
+        }
+      }
+  
+    });
+  }
   // 3: create and append the chart
-  function appendMilkChart(milkData) {
+  function appendMilkChart1(milkData) {
     // using prepareData() to get the excact data we want
     let data = prepareData(milkData);
     //open the developer console to inspect the result
@@ -978,7 +1230,7 @@ let dataPrYear = [{
           data: data.milk, // refering to the data object, holding data from prepareData()
           label: 'Mælk pr. ko',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-          borderColor: 'rgb(255, 99, 132)'
+          borderColor: '#6A6747'
         }]
       },
       // Configuration options goes here
@@ -992,11 +1244,243 @@ let dataPrYear = [{
   
     });
   }
-  appendMilkChart(dataPrYear);
+
+  function appendMilkChart2(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user2ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart3(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user3ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart4(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user4ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart5(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user5ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart6(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user6ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart7(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user7ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart8(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user8ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
+  function appendMilkChart9(milkData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(milkData);
+    //open the developer console to inspect the result
+    let chartContainer2 = document.getElementById('user9ChartContainer2');
+    let chart = new Chart(chartContainer2, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.milk, // refering to the data object, holding data from prepareData()
+          label: 'Mælk pr. ko',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Mælk'
+        }
+      }
+  
+    });
+  }
   
 
   // 3: create and append the chart
-  function appendDieselChart(dieselData) {
+  function appendDieselChart1(dieselData) {
     // using prepareData() to get the excact data we want
     let data = prepareData(dieselData);
     //open the developer console to inspect the result
@@ -1011,7 +1495,7 @@ let dataPrYear = [{
           data: data.diesel, // refering to the data object, holding data from prepareData()
           label: 'Liter diesel',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-          borderColor: 'rgb(255, 99, 132)'
+          borderColor: '#6A6747'
         }]
       },
       // Configuration options goes here
@@ -1025,11 +1509,241 @@ let dataPrYear = [{
   
     });
   }
-  appendDieselChart(dataPrYear);
+  function appendDieselChart2(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user2ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
   
+    });
+  }
+  function appendDieselChart3(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user3ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart4(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user4ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart5(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user5ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart6(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user6ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart7(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user7ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart8(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user8ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
+  function appendDieselChart9(dieselData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(dieselData);
+    //open the developer console to inspect the result
+    let chartContainer3 = document.getElementById('user9ChartContainer3');
+    let chart = new Chart(chartContainer3, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.diesel, // refering to the data object, holding data from prepareData()
+          label: 'Liter diesel',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'Diesel'
+        }
+      }
+  
+    });
+  }
 
     // 3: create and append the chart
-    function appendKWhChart(kWhData) {
+    function appendKWhChart1(kWhData) {
         // using prepareData() to get the excact data we want
         let data = prepareData(kWhData);
         //open the developer console to inspect the result
@@ -1044,7 +1758,7 @@ let dataPrYear = [{
               data: data.kWh, // refering to the data object, holding data from prepareData()
               label: 'Elektricitet/kWh',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-              borderColor: 'rgb(255, 99, 132)'
+              borderColor: '#6A6747'
             }]
           },
           // Configuration options goes here
@@ -1058,12 +1772,243 @@ let dataPrYear = [{
       
         });
       }
-
-      appendKWhChart(dataPrYear);
+      function appendKWhChart2(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user2ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart3(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user3ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart4(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user4ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart5(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user5ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart6(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user6ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart7(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user7ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart8(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user8ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+      function appendKWhChart9(kWhData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(kWhData);
+        //open the developer console to inspect the result
+        let chartContainer4 = document.getElementById('user9ChartContainer4');
+        let chart = new Chart(chartContainer4, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.kWh, // refering to the data object, holding data from prepareData()
+              label: 'Elektricitet/kWh',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'El/kWh'
+            }
+          }
+      
+        });
+      }
+    
 
 
     // 3: create and append the chart
-    function appendDryChart(dryData) {
+    function appendDryChart1(dryData) {
         // using prepareData() to get the excact data we want
         let data = prepareData(dryData);
         //open the developer console to inspect the result
@@ -1078,7 +2023,7 @@ let dataPrYear = [{
               data: data.dryMatter, // refering to the data object, holding data from prepareData()
               label: 'Kg tørfoder',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-              borderColor: 'rgb(255, 99, 132)'
+              borderColor: '#6A6747'
             }]
           },
           // Configuration options goes here
@@ -1092,11 +2037,241 @@ let dataPrYear = [{
       
         });
       }
-
-  appendDryChart(dataPrYear);
+      function appendDryChart2(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user2ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart3(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user3ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart4(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user4ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart5(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user5ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart6(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user6ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart7(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user7ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart8(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user8ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
+      function appendDryChart9(dryData) {
+        // using prepareData() to get the excact data we want
+        let data = prepareData(dryData);
+        //open the developer console to inspect the result
+        let chartContainer5 = document.getElementById('user9ChartContainer5');
+        let chart = new Chart(chartContainer5, {
+          // The type of chart we want to create
+          type: 'line',
+          // The data for our dataset
+          data: {
+            labels: data.years, // refering to the data object, holding data from prepareData()
+            datasets: [{
+              data: data.dryMatter, // refering to the data object, holding data from prepareData()
+              label: 'Kg tørfoder',
+              backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+              borderColor: '#6A6747'
+            }]
+          },
+          // Configuration options goes here
+          // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          options: {
+            title: {
+              display: true,
+              text: 'Tørfoder'
+            }
+          }
+      
+        });
+      }
   
     // 3: create and append the chart
-    function appendSelfFeedChart(selfFeedData) {
+    function appendSelfFeedChart1(selfFeedData) {
         // using prepareData() to get the excact data we want
         let data = prepareData(selfFeedData);
         //open the developer console to inspect the result
@@ -1111,7 +2286,7 @@ let dataPrYear = [{
               data: data.selfFeed, // refering to the data object, holding data from prepareData()
               label: '% Selvforsyning af foder',
               backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-              borderColor: 'rgb(255, 99, 132)'
+              borderColor: '#6A6747'
             }]
           },
           // Configuration options goes here
@@ -1125,11 +2300,259 @@ let dataPrYear = [{
       
         });
       }
+      // 3: create and append the chart
+    function appendSelfFeedChart2(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user2ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart3(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user3ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart4(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user4ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart5(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user5ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart6(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user6ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart7(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user7ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart8(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user8ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
+    // 3: create and append the chart
+    function appendSelfFeedChart9(selfFeedData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(selfFeedData);
+      //open the developer console to inspect the result
+      let chartContainer6 = document.getElementById('user9ChartContainer6');
+      let chart = new Chart(chartContainer6, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.selfFeed, // refering to the data object, holding data from prepareData()
+            label: '% Selvforsyning af foder',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'Selvforsyning'
+          }
+        }
+    
+      });
+    }
 
-      appendSelfFeedChart(dataPrYear);
+
+
+
+
+
+
+
+
+
   
   // 3: create and append the chart
-  function appendFootprintChart(footPrintData) {
+  function appendFootprintChart1(footPrintData) {
     // using prepareData() to get the excact data we want
     let data = prepareData(footPrintData);
     //open the developer console to inspect the result
@@ -1144,7 +2567,7 @@ let dataPrYear = [{
           data: data.footprint, // refering to the data object, holding data from prepareData()
           label: 'CO2 udslip',
           backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
-          borderColor: 'rgb(255, 99, 132)'
+          borderColor: '#6A6747'
         }]
       },
       // Configuration options goes here
@@ -1159,6 +2582,254 @@ let dataPrYear = [{
     });
   }
 
-  appendFootprintChart(dataPrYear);
+    // 3: create and append the chart
+    function appendFootprintChart2(footPrintData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(footPrintData);
+      //open the developer console to inspect the result
+      let chartContainer7 = document.getElementById('user2ChartContainer7');
+      let chart = new Chart(chartContainer7, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.footprint, // refering to the data object, holding data from prepareData()
+            label: 'CO2 udslip',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'CO2'
+          }
+        }
+    
+      });
+    }
+      // 3: create and append the chart
+  function appendFootprintChart3(footPrintData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(footPrintData);
+    //open the developer console to inspect the result
+    let chartContainer7 = document.getElementById('user3ChartContainer7');
+    let chart = new Chart(chartContainer7, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.footprint, // refering to the data object, holding data from prepareData()
+          label: 'CO2 udslip',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'CO2'
+        }
+      }
+  
+    });
+  }
+    // 3: create and append the chart
+    function appendFootprintChart4(footPrintData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(footPrintData);
+      //open the developer console to inspect the result
+      let chartContainer7 = document.getElementById('user4ChartContainer7');
+      let chart = new Chart(chartContainer7, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.footprint, // refering to the data object, holding data from prepareData()
+            label: 'CO2 udslip',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'CO2'
+          }
+        }
+    
+      });
+    }
+      // 3: create and append the chart
+  function appendFootprintChart5(footPrintData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(footPrintData);
+    //open the developer console to inspect the result
+    let chartContainer7 = document.getElementById('user5ChartContainer7');
+    let chart = new Chart(chartContainer7, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.footprint, // refering to the data object, holding data from prepareData()
+          label: 'CO2 udslip',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'CO2'
+        }
+      }
+  
+    });
+  }
+    // 3: create and append the chart
+    function appendFootprintChart6(footPrintData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(footPrintData);
+      //open the developer console to inspect the result
+      let chartContainer7 = document.getElementById('user6ChartContainer7');
+      let chart = new Chart(chartContainer7, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.footprint, // refering to the data object, holding data from prepareData()
+            label: 'CO2 udslip',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'CO2'
+          }
+        }
+    
+      });
+    }
+      // 3: create and append the chart
+  function appendFootprintChart7(footPrintData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(footPrintData);
+    //open the developer console to inspect the result
+    let chartContainer7 = document.getElementById('user7ChartContainer7');
+    let chart = new Chart(chartContainer7, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.footprint, // refering to the data object, holding data from prepareData()
+          label: 'CO2 udslip',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'CO2'
+        }
+      }
+  
+    });
+  }
+    // 3: create and append the chart
+    function appendFootprintChart8(footPrintData) {
+      // using prepareData() to get the excact data we want
+      let data = prepareData(footPrintData);
+      //open the developer console to inspect the result
+      let chartContainer7 = document.getElementById('user8ChartContainer7');
+      let chart = new Chart(chartContainer7, {
+        // The type of chart we want to create
+        type: 'line',
+        // The data for our dataset
+        data: {
+          labels: data.years, // refering to the data object, holding data from prepareData()
+          datasets: [{
+            data: data.footprint, // refering to the data object, holding data from prepareData()
+            label: 'CO2 udslip',
+            backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+            borderColor: '#6A6747'
+          }]
+        },
+        // Configuration options goes here
+        // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+        options: {
+          title: {
+            display: true,
+            text: 'CO2'
+          }
+        }
+    
+      });
+    }
+      // 3: create and append the chart
+  function appendFootprintChart9(footPrintData) {
+    // using prepareData() to get the excact data we want
+    let data = prepareData(footPrintData);
+    //open the developer console to inspect the result
+    let chartContainer7 = document.getElementById('user9ChartContainer7');
+    let chart = new Chart(chartContainer7, {
+      // The type of chart we want to create
+      type: 'line',
+      // The data for our dataset
+      data: {
+        labels: data.years, // refering to the data object, holding data from prepareData()
+        datasets: [{
+          data: data.footprint, // refering to the data object, holding data from prepareData()
+          label: 'CO2 udslip',
+          backgroundColor: '#f1f1f1', // Customise the graf color etc. Go to the docs to find more: https://www.chartjs.org/docs/latest/
+          borderColor: '#6A6747'
+        }]
+      },
+      // Configuration options goes here
+      // Go to the docs to find more: https://www.chartjs.org/docs/latest/
+      options: {
+        title: {
+          display: true,
+          text: 'CO2'
+        }
+      }
+  
+    });
+  }
+
+  
+
+  
+
+  
+
+  
+
 
   
